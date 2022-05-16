@@ -22,7 +22,7 @@ a:active {}
 cite {
 	font-style: italic;
 	font-size: 12px;
-	color: #7892ff;
+	color: #f59587;
 }
 
 .clear {
@@ -148,6 +148,11 @@ section:last-child {
   margin: 5px 0;
 }
 
+#removed.collapsible {
+	background-color: #4c515c;
+	cursor: default;
+}
+
 .content {
   padding: 5px 18px;
   max-height: 0;
@@ -207,6 +212,7 @@ section:last-child {
 .sectionContent h3 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
+	font-weight: bold;
 	font-size: 1.1em;
 	margin-top: 0.3em;
 	margin-bottom: -2px;
