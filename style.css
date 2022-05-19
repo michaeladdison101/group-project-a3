@@ -177,7 +177,7 @@ section:last-child {
 
 .gridWrapper {
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 100%;
 	margin-bottom: 1.5em;
 }
 
