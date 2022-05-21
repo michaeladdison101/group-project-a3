@@ -177,12 +177,16 @@ section:last-child {
 
 .gridWrapper {
 	display: grid;
-	grid-template-columns: 100%;
+	grid-template-columns: 60% 40%;
 	margin-bottom: 1.5em;
 }
 
 .gridWrapper .gridLeft {
 	padding-right: 25px;
+}
+
+.test-titles {
+	padding: 0.25em 0;
 }
 
 .sectionContent .testResults {
@@ -269,6 +273,19 @@ section:last-child {
   	text-align: left;
   	background-color: #191b1f;
   	color: #afc4de;
+}
+
+#project-link {
+	background-color: #f57967;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	padding-right: 1em;
+}
+
+#project-link:hover {
+	transition: 0.4s;
+	background-color: #fc543a;
 }
 
 .keySkills {

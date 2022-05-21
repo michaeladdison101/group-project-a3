@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="PetWaze project"/>
+	<meta charset="UTF-8"> 
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Rokkitt:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6f5c817266.js" crossorigin="anonymous"/></script>
+</head>
+
+<body>
+<div id="cv">
+	<button style="margin: 1em;" onclick="goHome()"">Go home</button>
+
+	<div id="mainArea" style="padding: 2em;">
+		<h3>Overview</h3>
+		<p>Development of a progressive web app (PWA) that provides dog owners with quick information and reviews of rest stops along roads. Initially the PWA will be targeted at Victorian roads, however there is opportunity at a later stage to expand this to be Australia-wide for greater usage and user accounts.</p>
+		
+		<h3>Motivation</h3>
+		<p>The initial motivation for the project idea was experienced by Michael Addison. After a breakdown on a Victorian Highway, Michael spent some time pulled over at a rest stop. During this time, he encountered a couple who were travelling with their large dog who pulled in to use the facilities. There was nowhere safe for the dog to freely roam, or to have access to safe drinking water. After quick research on Google, Michael found that the information on facilities available to dog owners wasn’t able to be found regarding rest stops along major highways.</h3> 
+		<p>According to the ‘Pets in Australia’ survey conducted in 2019 by Newsgate Research on behalf of Animal Medicines Australia, 39.9% of Australian households are home to at least one dog. Of those dog owners 25% report taking their dog on a road trip or holiday. This is a large market opportunity for dog owners who would find this information useful to plan their trips.</p>
+		<p>With the initial data feed to be supplied in conjunction with support from Visit Victoria, there is further opportunities for local councils and small business to receive preferred preferencing on the PWA to entice dog owners to stop at their facility. There will also be user feedback available on each rest stop giving dog owners the chance to directly engage and leave reviews on their experience to increase the services and upkeep at these areas.</p>
+		
+		<h3>Description</h3>
+		<p>The features of the PWA would include a list and map that shows rest stops located in Victoria. Each rest stop would have its own page, including its location, photos, bathroom facilities for dog owners, availability of safe drinking water, availability of secure areas for a dog to walk or run, additional notes based on user feedback and a rating of the dog-friendliness of the rest stop.</p>
+		<p>Partnering with Visit Victoria tourism body, the initial upload of raw data is to be facilitated direct from the provider/caretaker of the rest stop. Each rest stop is to have as much information as is applicable and the fields of data that will be asked are: facilities provided - bathroom facilities for dog owners, availability of safe drinking water, availability of secure areas for a dog to walk or run and any professional pictures. Once the PWA is live, users will be able to leave feedback on their experience which small business owners and local councils can use to improve on service.</p>
+		<p>When users download the application, they will be able to use the app without an account to view each page of information available for the rest stop they are looking for. To leave a review or to plan a journey in advance and save stops to their favourites, users will be able to create an account within the application.</p>
+		<p>In the initial phase of the PWA, the data will be found by searching the name of the rest stop, or town closest to display a list of results. Each rest stop will have their own individual page where this information is stored.</p>
+		<p>Future enhancements may include a map that uses the device's GPS location to show nearby rest stops. The ability for users to add photos and reviews. Integration with a service similar to Snap Send Solve to allow users to report maintenance issues to local councils and businesses.</p>
+
+		<h3>Tools and Technologies</h3> 
+		<p>For an app to generally be considered a Progressive Web App (PWA), it must:</p> 
+		<p>1.	be running on HTTPS</p>
+		<p>2.	a web manifest file is needed</p>
+		<p>3.	a service worker is needed  (Creating a Progressive Web Application (PWA) - HTML, CSS & JavaScript Tutorial, 2022)</p> 
+
+		<p>To fulfil the first requirement of running on HTTPS. The domain in which your website is hosted must use Hypertext Transfer Protocol Secure (HTTPS). This can be achieved by publishing the website to a web server that supports HTTPS or using a web host that provides automatic HTTPS. To fulfil the second and third requirements, a development environment needs to be set up to access and further develop these files.</p> 
+		<p>The development environment requires Git, Node.JS and Visual Studio Code to access the PWA starter, which will be used as a prototype for the project. Git is a distributed version control system (DVCS) that manages all source code history. It is free and open-source software. It can keep track of commits, undo changes, and allow developers to exchange code. To collaborate, each developer must have Git installed on their local device. (Git vs GitHub: What are the Major Differences, 2022)</p>
+		<p>Node.js is a free and open-source back-end JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js allows developers to utilise JavaScript to create command-line tools and server-side scripting, which involves running scripts on the server to generate dynamic web page content before sending the page to the user's browser. (Node.js - Wikipedia, 2022)</p>
+		<p>Microsoft's Visual Studio Code, also known as VS Code, is a source-code editor available for Windows, Linux, and macOS. Debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and integrated Git are among the features. Users can customise the theme, keyboard shortcuts, and preferences and install extensions that add new functionality. Visual Studio Code was voted the most popular development environment tool in the Stack Overflow 2021 Developer Survey. (Visual Studio Code - Wikipedia, 2022)</p>
+		<p>Other tools to support developing and publishing a PWA include the Chrome Lighthouse tool available as a Chrome browser extension or Chrome Developer Tools. Lighthouse is an open-source, automated web page quality-improvement technology. You can use it on any web page, whether it's public or requires authentication. Performance, accessibility, progressive web apps, SEO, and can be audited. (Lighthouse  |  Tools for Web Developers  |  Google Developers, 2022)</p>
+		<p>The final tool needed for our group's PWA is PWA Builder. PWA Builder allows for building a PWA and publishing to the Apple, Google, and Microsoft app stores.</p> 
+
+		<h3>Skills Required</h3>
+		<p>As this project utilises PWA technology it’s required proficiency in publishing and knowing how to use a PWA builder, such as Microsoft's PWABuilder or the GitHub PWA builder. The visual design aspect of the project also requires graphic and web design skills and experience are also needed. Adobe illustrator knowledge can be used to assist in graphic design and Photoshop for image processing. CSS proficiency as well, as it informs browsers how to format the HTML along with adjusting the style of the page. To obtain these skills it can be helpful to utilise platforms such as Web.dev, Udemy and Code academy to develop skills needed to understand or create a PWA. The graphic skills can be learned on YouTube, Udemy or Skillshare.</p> 
+
+		<h3>Outcome</h3>
+		<p>The project's success will lead to an online resource that makes car travel for dog owners easier. Dog owners will be able to plan their trip to utilise better rest stops that are more suited to pets. Hopefully, the project will bring improvements to the rest stop facilities available by informing local councils and businesses of potential areas that need attention.</p>
+
+		<h3>References:</h3>
+		<ol class="bibliography">
+			<li>
+				<cite>
+					Google Developers. 2022. Lighthouse  |  Tools for Web Developers  |  Google Developers. [online] Available at: <https://developers.google.com/web/tools/lighthouse> [Accessed 22 April 2022].  
+				</cite>
+			</li>
+			<li>
+				<cite>
+					Simplilearn. 2022. Git vs GitHub: What are the Major Differences. [online] Available at: <https://www.simplilearn.com/tutorials/git-tutorial/git-vs-github> [Accessed 22 April 2022].  
+				</cite>
+			</li>
+			<li>
+				<cite>
+					wikipedia.org. 2022. Node.js - Wikipedia. [online] Available at: <https://en.wikipedia.org/wiki/Node.js> [Accessed 22 April 2022].  
+				</cite>
+			</li>
+			<li>
+				<cite>
+					wikipedia.org. 2022. Visual Studio Code - Wikipedia. [online] Available at: <https://en.wikipedia.org/wiki/Visual_Studio_Code> [Accessed 22 April 2022].  
+				</cite>
+			</li>
+			<li>
+				<cite>
+					Youtube.com. 2022. Creating a Progressive Web Application (PWA) - HTML, CSS & JavaScript Tutorial. [online] Available at: <https://www.youtube.com/watch?v=WbbAPfDVqfY> [Accessed 22 April 2022].
+				</cite>
+			</li>					
+		<div class="clear"></div>
+	</div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
+
