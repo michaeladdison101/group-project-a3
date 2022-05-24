@@ -7,6 +7,10 @@ padding:0;
 vertical-align:baseline;
 }
 
+strong, b {
+    font-weight: bold;
+}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
@@ -276,11 +280,12 @@ section:last-child {
 }
 
 #project-link {
+	padding-right: 1em;
+	margin-bottom: 0.8em;
 	background-color: #f57967;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
-	padding-right: 1em;
 }
 
 #project-link:hover {
