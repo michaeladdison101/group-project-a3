@@ -16,40 +16,627 @@
 	<button style="margin: 1em;" onclick="goHome()"">Go home</button>
 
 	<div id="mainArea" style="padding: 2em;">
-		<h3>Overview</h3>
-		<p>Development of a progressive web app (PWA) that provides dog owners with quick information and reviews of rest stops along roads. Initially the PWA will be targeted at Victorian roads, however there is opportunity at a later stage to expand this to be Australia-wide for greater usage and user accounts.</p>
+		<h1>Project Plan/Description&nbsp;</h1>
+
+		<h2>App Name</h2>
 		
-		<h3>Motivation</h3>
-		<p>The initial motivation for the project idea was experienced by Michael Addison. After a breakdown on a Victorian Highway, Michael spent some time pulled over at a rest stop. During this time, he encountered a couple who were travelling with their large dog who pulled in to use the facilities. There was nowhere safe for the dog to freely roam, or to have access to safe drinking water. After quick research on Google, Michael found that the information on facilities available to dog owners wasn’t able to be found regarding rest stops along major highways.</h3> 
-		<p>According to the ‘Pets in Australia’ survey conducted in 2019 by Newsgate Research on behalf of Animal Medicines Australia, 39.9% of Australian households are home to at least one dog. Of those dog owners 25% report taking their dog on a road trip or holiday. This is a large market opportunity for dog owners who would find this information useful to plan their trips.</p>
-		<p>With the initial data feed to be supplied in conjunction with support from Visit Victoria, there is further opportunities for local councils and small business to receive preferred preferencing on the PWA to entice dog owners to stop at their facility. There will also be user feedback available on each rest stop giving dog owners the chance to directly engage and leave reviews on their experience to increase the services and upkeep at these areas.</p>
+		<p>PetWaze</p>
 		
-		<h3>Description</h3>
-		<p>The features of the PWA would include a list and map that shows rest stops located in Victoria. Each rest stop would have its own page, including its location, photos, bathroom facilities for dog owners, availability of safe drinking water, availability of secure areas for a dog to walk or run, additional notes based on user feedback and a rating of the dog-friendliness of the rest stop.</p>
-		<p>Partnering with Visit Victoria tourism body, the initial upload of raw data is to be facilitated direct from the provider/caretaker of the rest stop. Each rest stop is to have as much information as is applicable and the fields of data that will be asked are: facilities provided - bathroom facilities for dog owners, availability of safe drinking water, availability of secure areas for a dog to walk or run and any professional pictures. Once the PWA is live, users will be able to leave feedback on their experience which small business owners and local councils can use to improve on service.</p>
-		<p>When users download the application, they will be able to use the app without an account to view each page of information available for the rest stop they are looking for. To leave a review or to plan a journey in advance and save stops to their favourites, users will be able to create an account within the application.</p>
-		<p>In the initial phase of the PWA, the data will be found by searching the name of the rest stop, or town closest to display a list of results. Each rest stop will have their own individual page where this information is stored.</p>
-		<p>Future enhancements may include a map that uses the device's GPS location to show nearby rest stops. The ability for users to add photos and reviews. Integration with a service similar to Snap Send Solve to allow users to report maintenance issues to local councils and businesses.</p>
-
-		<h3>Tools and Technologies</h3> 
-		<p>For an app to generally be considered a Progressive Web App (PWA), it must:</p> 
-		<p>1.	be running on HTTPS</p>
-		<p>2.	a web manifest file is needed</p>
-		<p>3.	a service worker is needed  (Creating a Progressive Web Application (PWA) - HTML, CSS & JavaScript Tutorial, 2022)</p> 
-
-		<p>To fulfil the first requirement of running on HTTPS. The domain in which your website is hosted must use Hypertext Transfer Protocol Secure (HTTPS). This can be achieved by publishing the website to a web server that supports HTTPS or using a web host that provides automatic HTTPS. To fulfil the second and third requirements, a development environment needs to be set up to access and further develop these files.</p> 
-		<p>The development environment requires Git, Node.JS and Visual Studio Code to access the PWA starter, which will be used as a prototype for the project. Git is a distributed version control system (DVCS) that manages all source code history. It is free and open-source software. It can keep track of commits, undo changes, and allow developers to exchange code. To collaborate, each developer must have Git installed on their local device. (Git vs GitHub: What are the Major Differences, 2022)</p>
-		<p>Node.js is a free and open-source back-end JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js allows developers to utilise JavaScript to create command-line tools and server-side scripting, which involves running scripts on the server to generate dynamic web page content before sending the page to the user's browser. (Node.js - Wikipedia, 2022)</p>
-		<p>Microsoft's Visual Studio Code, also known as VS Code, is a source-code editor available for Windows, Linux, and macOS. Debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and integrated Git are among the features. Users can customise the theme, keyboard shortcuts, and preferences and install extensions that add new functionality. Visual Studio Code was voted the most popular development environment tool in the Stack Overflow 2021 Developer Survey. (Visual Studio Code - Wikipedia, 2022)</p>
-		<p>Other tools to support developing and publishing a PWA include the Chrome Lighthouse tool available as a Chrome browser extension or Chrome Developer Tools. Lighthouse is an open-source, automated web page quality-improvement technology. You can use it on any web page, whether it's public or requires authentication. Performance, accessibility, progressive web apps, SEO, and can be audited. (Lighthouse  |  Tools for Web Developers  |  Google Developers, 2022)</p>
-		<p>The final tool needed for our group's PWA is PWA Builder. PWA Builder allows for building a PWA and publishing to the Apple, Google, and Microsoft app stores.</p> 
-
-		<h3>Skills Required</h3>
-		<p>As this project utilises PWA technology it’s required proficiency in publishing and knowing how to use a PWA builder, such as Microsoft's PWABuilder or the GitHub PWA builder. The visual design aspect of the project also requires graphic and web design skills and experience are also needed. Adobe illustrator knowledge can be used to assist in graphic design and Photoshop for image processing. CSS proficiency as well, as it informs browsers how to format the HTML along with adjusting the style of the page. To obtain these skills it can be helpful to utilise platforms such as Web.dev, Udemy and Code academy to develop skills needed to understand or create a PWA. The graphic skills can be learned on YouTube, Udemy or Skillshare.</p> 
-
-		<h3>Outcome</h3>
-		<p>The project's success will lead to an online resource that makes car travel for dog owners easier. Dog owners will be able to plan their trip to utilise better rest stops that are more suited to pets. Hopefully, the project will bring improvements to the rest stop facilities available by informing local councils and businesses of potential areas that need attention.</p>
-
+		<h2>Overview</h2>
+		
+		<p>Development of a Progressive Web App (PWA) that provides dog owners with quick information and reviews of road rest stops. Initially, the PWA will target Victorian roads, including rest stop information, reviews and a linked map. Future features to be included in the PWA include expanding rest stop information for other Australian states and territories and integrating with online map providers such as Google Maps. Integration with smart city technology platforms such as Snap Send Solve that simplifies community issue reporting to local councils and businesses.</p>
+		
+		<h2>Motivation</h2>
+		
+		<p>Michael Addison experienced the initial motivation for the project idea. After a breakdown on a Victorian Highway, Michael spent some time pulled over at a rest stop. He encountered a couple travelling with their large dog who pulled in to use the facilities during this time. There was nowhere safe for the dog to roam freely or access safe drinking water. After quick research on Google, Michael found that the information on facilities available to dog owners couldn&rsquo;t be found regarding rest stops along major highways.</p>
+		
+		<p>According to the &lsquo;Pets in Australia&rsquo; survey conducted in 2019 by Newsgate Research on behalf of Animal Medicines Australia, 39.9% of Australian households are home to at least one dog. Of those dog owners, 25% report taking their dog on a road trip or holiday. This is a significant market opportunity for dog owners who would find this information helpful in planning their trips.</p>
+		
+		<p>With the initial data feed to be supplied in conjunction with support from Visit Victoria, there are further opportunities for local councils and small businesses to receive preferred preferencing on the PWA to entice dog owners to stop at their facility. There will also be user feedback available at each rest stop giving dog owners the chance to directly engage and leave reviews on their experience to increase the services and upkeep in these areas.</p>
+		
+		<h2>Landscape</h2>
+		
+		<p>Similar products available would be Google Maps or Waze. These products provide detailed information about geographical regions and sites around the world. They allow you to orient yourself in said regions and plan trips or stops along the way. Competitors would be Bing Maps Citymapper which offers similar services, give or take some features. The difference is that this project will be more specific in its intention. It will enable the user to access basic information and photos and, more specifically, the availability of safe drinking water, areas for dogs to walk or run, and ratings. Thus, allowing the user to plan trips with their pets.</p>
+		
+		<h1>Detailed Description</h1>
+		
+		<h2><strong>Aim</strong></h2>
+		
+		<p>
+		The PetWaze project aims to create and release a Progressive Web App (PWA) for Australian pet owners. The PWA can be installed on both Android and Apple iOS and minimises the need to publish a native app to the respective app stores while eliminating the need for the project team to learn and develop two separate apps in different.&nbsp;&nbsp;</p>
+		
+		<p>One of the main goals is to create a PWA Figma design that the project team can reference. Both frontend and backend developers can use the design in both static and prototype views to aid in developing the PWA. Project team members testing the PWA can use the design to determine expected versus actual behaviour and ensure the developed PWA meets its designed functional requirements.</p>
+		
+		<p>Other goals include developer documentation on setting up their respective development environments and process documentation on how to publish a PWA. Further technical documentation needed includes how app features were architected, which is helpful if a project team member leaves the project and new developers begin on the project.</p>
+		
+		<h2><strong>Plans and Progress</strong></h2>
+		
+		<p>As many people would love to go on road trips, long drives or travel interstate with their pets, there is currently no platform, app or website that provides pet owners with information to find facilities that cater to their needs. This is the inspiration behind PetWaze, it will be created as a PWA, as PWAs can easily be accessed via multiple browsers and devices, do not require downloads, and can be easily shared and accessed, which caters to the needs PetWaze&rsquo;s users. The use of PWA technology does provide possible insight into what possible growth PetWaze may receive. Large online retailer AliExpress reported their engagement had drastically increased after transitioning to PWA &ldquo;AliExpress saw a 104% increase in conversion rates for new users once they transitioned to a PWA approach.&rdquo; (What is a PWA? Pros and Cons of a PWA - Builder.ai&reg;, 2022). PetWaze has no competitors or foundational research as it&rsquo;s a new niche.</p>
+		
+		<p>Currently, we&rsquo;ve decided not to make any changes to PetWaze. The main concern is to create a PWA that can supply information solely for Victorians, this will consist of a map, rest stop information and reviews. The lack of change with the PetWaze is that it is a niche that doesn&rsquo;t have any current competitors that could supply valuable insights. This PWA is meant to be the first of its kind, so it&rsquo;s more sensible to focus on creating a stable foundation for PetWaze&rsquo;s longevity. The possible changes that could be implemented to this PWA are its future features that would include integrating with established map providers such as Google Maps and OpenStreetMaps and incorporating and adding information from other Australian states and territories. The current stage of PetWaze is to design its PWA wireframe and user interface by utilising Figma to create the prototype.&nbsp;</p>
+		
+		<p>The two aspects that have contributed to this progression are the current understanding of PWA in relation to the needs of PetWaze and the tools Figma supplies to create a functional web app. A beneficial feature of PWA technology is the security it provides to both users and developers as stated, &ldquo;Progressive Web Apps are served via HTTPS, which ensures that without authentication it cannot be tampered by anyone.&rdquo; (Impact of progressive web apps on web app development. International Journal of Innovative Research in Science, Engineering and Technology). PWAs must adhere to HTTPS guidelines which provide the PWA with security, since PWAs are also accessed through web browsers as well, these web browsers have built-in security features which aid in providing added security. PetWaze must be accessible to all regardless of device, with the utilisation of PWA technology will enhance accessibility and discoverability. As PWAs are web-based applications, no installation of downloads is needed. This makes PetWaze accessible to users with slower connection speed, smaller storage space, or slower speed devices. Potential PetWaze users who plan to travel to remote areas will not have to be concerned about accessibility. As the PetWaze is intended for users who travel, phone battery conservation is extremely important. The PWA falls short of preserving the battery and consumes more energy than native apps, this is caused by the complex codes needed for PWAs. Another concern is that PWAs have fewer functions, especially for PetWaze users with Apple devices. This may lead to limited user experience, and users may not be able to use Bluetooth, Siri, and push notifications. We&rsquo;ve chosen Figma to create the PetWaze because it allows us to utilise multiple design tools and add the required plug-ins to the PWA. As Figma is a cloud-based designing platform, this enables the PetWaze to be built collaboratively in real-time without the need for members needing to depend on one individual to design the PWA. This PWA does require a map and review feature, Figma APIs allow for easy integration of Google Maps and reviews. This gives for both easy design control and user access. Another benefit is that it supports and provides all the tools required to make the prototype design and convert them into a fully functional responsive website. A more technical concern of utilising Figma for &ldquo;PetWaze&rdquo; is that it does require that a patron of &ldquo;PetWaze&rdquo; needs to have a 4GB of ram and Intel HD 3000 graphic card. If users do not have this, it can make accessing the PWA more complicated and may take longer to view the PWA.</p>
+		
+		<p>The potential end goal of&nbsp;Petwaze&nbsp;is a fully functional PWA, which allows users to register an account, view reviews, access the map to find rest stops, and more. Beyond depending on a&nbsp;PWA, another&nbsp;possible future progression for&nbsp;PetWaze&nbsp;is that it becomes available on app stores to be accessed either as PWA or a native app. This possible progression is that PWA features are not fully accessible on certain devices, such as Apple, as they have not yet integrated PWA technology with their IOS software.</p>
+		
+		<p>As PetWaze aims to be available to all users, it must have a native app for optimal convenience in the future. It&rsquo;s recommended that PetWaze developers have a team of at least a project manager, backend, frontend, and UX/UI designer to successfully continue developing PetWaze. To guarantee success, it&rsquo;s essential that the project manager can plan the future progression of PetWaze thoroughly to meet deadlines. They must be able to create plans that comply with scopes, timeframes, and budgets. PetWaze must have a frontend developer who has the technical experience to develop and maintain the user interfaces and create new features that improve site interaction. The foundation of PetWaze is the backend developer who will be expected to create a sustainable web app and can understand cross-platform functionality and compatibility. The backend developer must build and maintain the database, ensuring that PetWaze has high performance and responsiveness. As PetWaze is aimed to be accessible to users, the UX/UI designer needs to empathise with PetWaze users&rsquo; needs to design user-friendly interfaces. They could continue developing PetWaze through Microsoft&rsquo;s PWABuilder. This provides the developers with the necessary tools to build the PetWaze and simple PWA to native app conversion. &nbsp;</p>
+		
+		<h2><strong>Roles</strong></h2>
+		
+		<p>The roles required to create the PetWaze consist of the project manager, whose responsibility is to make sure that they plan and propose the projects and goals in detail and stick to a timeline and budget. The backend and frontend developers need to work congruently to successfully create a functional, user-friendly web app and main the web server and database. With the future progression of the PetWaze, this role can eventually become just a Full Stack Developer, as they are proficient and have expertise in both Frontend and Backend web development. Considering that PetWaze is heavily user-based, UX/UI designers are crucial as their responsibilities consist of researching user experience and designing high-quality design solutions through wireframes and prototypes. For guaranteed success in creating the PetWaze consistent collaboration is required. In the future, when PetWaze is more established, then the roles can be rotated, presently, collaboration is critical within the first few months to a year to secure optimal design and usage. &nbsp;</p>
+		
+		<h2><strong>Scope&nbsp;</strong><strong>and Limits</strong></h2>
+		
+		<p>The PWA will feature information and reviews of road rest stops. It will primarily target Victorian roads and include information, reviews, and a linked map. Due to limitations, these will be the set priorities and expansion to further features will not be feasible in the timeframe given. These future features would include integrating the PWA into other providers such as Google Maps and Snap Send to expand to other states and territories and provide issue reporting to local councils and businesses.</p>
+		
+		<h2><strong>Tools and Technologies</strong></h2>
+		
+		<p><strong>IDE / Text Editor</strong></p>
+		
+		<ol>
+			<li>WebStorm (full IDE) - latest stable release - Version: 2022.1.1 Build: 221.5591.52 13 May 2022
+				<br>&nbsp; &nbsp;Plan: Single IDE (per user)
+				<br>&nbsp; &nbsp;Cost: US $129.00 / year</li>
+			<li><em>(optional)</em> VS code + extensions (community) - April 2022 (version 1.67)</li>
+			<li>React (open source) - version 16</li>
+			<li>Node (open source) - version 18</li>
+		</ol>
+		
+		<p><strong>Database</strong></p>
+		
+		<ol>
+			<li>MySQL (open source) - stable release - 8.0.29 - April</li>
+		</ol>
+		
+		<p><strong>Version Control</strong></p>
+		
+		<ol>
+			<li>Bitbucket (includes Bitbucket pipelines for automatic deployment)
+				<br>&nbsp; &nbsp;Plan: Standard
+				<br>&nbsp; &nbsp;Cost: $3 / month / user</li>
+		</ol>
+		
+		<p><strong>Design</strong></p>
+		
+		<ol>
+			<li>Figma
+				<br>&nbsp; &nbsp;Plan: Figma Professional
+				<br>&nbsp; &nbsp;Cost: $12 / editor / month</li>
+		</ol>
+		
+		<p><strong>Ticketing / Project Management</strong></p>
+		
+		<ol>
+			<li>JIRA
+				<br>&nbsp; &nbsp;Plan: Free up to 10 users
+				<br>&nbsp; &nbsp;Cost Free</li>
+		</ol>
+		
+		<p><strong>Error monitoring</strong></p>
+		
+		<ol>
+			<li>Sentry
+				<br>&nbsp; &nbsp;Plan: Core Error and Performance Monitoring with flexible event volume
+				<br>&nbsp; &nbsp;Cost: $26 / month</li>
+		</ol>
+		
+		<p><strong>Code testing</strong></p>
+		
+		<ol>
+			<li>Jest (both front / back end) - stable release - 8.0.29</li>
+		</ol>
+		
+		<p><strong>Misc</strong></p>
+		
+		<ol>
+			<li>Google Maps JavaScript API
+				<br>&nbsp; &nbsp;Plan: Dynamic package
+				<br>&nbsp; &nbsp;Cost: $7 / month / 1000 API calls (cost increases by $7 / 1000 additional calls)&nbsp;</li>
+		</ol>
+		
+		<h2>Experience in the team</h2>
+		
+		<p><strong>Front End</strong></p>
+		
+		<p>Matthew will be ready to hit the ground running on this project, bringing his experience building the popular StayWaze, a PWA that provides all available lodging destinations based on a given route a user will be taking, targeted at long road trips. StayWaze is built around a React 18.0 frontend, meaning his React skills are top-notch and current.&nbsp;</p>
+		
+		<p>He also brings his knowledge/expertise working with the Fetch API, which is key to great UX.
+			<br>&nbsp;
+			<br>&nbsp;<strong>Back End</strong></p>
+		
+		<p>Jesse has limited exposure to a Node environment, but his fundamentals are sound, with a strong history of working in other backend languages (Java, PHP).&nbsp;</p>
+		
+		<p>Creating and integrating APIs with Databases is another strength of Jesse&rsquo;s that he will bring to this project.</p>
+		
+		<p><strong>UI / UX Designer</strong></p>
+		
+		<p>Gisma was recruited based on her extensive portfolio and experience in wireframing and prototyping in Figma.</p>
+		
+		<p>She also has an eye for creating sleek and modern user interfaces with a primary focus being an excellent UX.</p>
+		
+		<p><strong>IT Project Manager / Team Lead</strong></p>
+		
+		<p>Michael comes from a tech background holding a degree in Software Engineering.</p>
+		
+		<p>He has been lead across several projects from start to finish in his last job and therefore, we wanted someone with his knowledge to be able to take on this project as his own.</p>
+		
+		<h2><strong>Testing</strong></h2>
+		
+		<p>Michael has decided that Test Driven Development (TDD) using the JEST framework will be used for the code testing part of the project. This is an iterative approach that combines the three below steps:</p>
+		
+		<ol>
+			<li><strong>Create precise tests to verify the functionality of a specific feature</strong></li>
+			<li><strong>Correcting the code once a test fails so it can run successfully</strong></li>
+			<li><strong>Refactor the code to ensure it&rsquo;s optimised and DRY&nbsp;</strong></li>
+		</ol>
+		
+		<p>Chromium, Firefox and Safari all provide browser-inbuilt developer tools. These will be used to assist with testing key PWA metrics such as service works, JSON manifests and internet connection throttling to name a few.</p>
+		
+		<p>Google Lighthouse will also be used periodically just the development process to conduct site audits, listing metrics important to UI and UX.</p>
+		
+		<h2><span lang="EN-US">Timeframe</span></h2>
+		
+		<table border="1" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p><strong>Week&nbsp;</strong></p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p><strong>Project Manager / Team Lead &ndash; Michael</strong></p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p><strong>Front End Developer - Matthew</strong></p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p><strong>Backend Developer - Jesse</strong></p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p><strong>UI/UX Designer - Gisma</strong></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W8</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Discovery</p>
+		
+						<p>Requirements Gathering</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Research and Learn Progressive Web App</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Research and Learn Progressive Web App</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>User Research&nbsp;</p>
+		
+						<p>Wireframing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W9</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Discovery</p>
+		
+						<p>Requirements Gathering</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Research and Learn Frontend PWA Frameworks</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Research and Learn Backend PWA Frameworks</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>User Research</p>
+		
+						<p>Wireframing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W10</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Administration</p>
+		
+						<p>Learn PWA Publishing Method</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Learn and Research Frontend PWA Features</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Learn and Research PWA Backend Features</p>
+		
+						<p>Learn PWA Publishing Method</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>User Research&nbsp;</p>
+		
+						<p>Prototyping</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W11</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Administration</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Development Environment Setup</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Development Environment Setup</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>User Research</p>
+		
+						<p>Prototyping</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W12</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W13</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Report</p>
+		
+						<p>Project Presentation</p>
+		
+						<p>Figma Design</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W14</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build PWA Skeleton</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build PWA Skeleton</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W15</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+		
+						<p>Assist with PWA release</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build PWA Skelton</p>
+		
+						<p>
+							<br>
+						</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build PWA Skelton</p>
+		
+						<p>Publish beta PWA 0.1</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W16</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Maps Page and Integrations</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Maps Page and Integrations</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W17</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+		
+						<p>Assist with PWA release</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Maps Page and Integrations</p>
+		
+						<p>
+							<br>
+						</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Maps Page and Integrations</p>
+		
+						<p>Publish beta PWA 0.2</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W18</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Home and Listing pages plus integrations</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Home and Listing pages plus integrations</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W19</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+		
+						<p>Assist with PWA release</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Listing Pages and Integrations</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build Listing Pages and Integrations</p>
+		
+						<p>Publish beta PWA 0.3</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W20</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Account feature (Create Account)</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Account feature</p>
+		
+						<p>(Create Account)</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W21</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+		
+						<p>Assist with PWA release</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Account feature</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Account feature</p>
+		
+						<p>Publish beta PWA 0.4</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W22</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Access feature (Sign-In)</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Access feature (Sign-In)</p>
+		
+						<p>
+							<br>
+						</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="20%">
+		
+						<p>W23</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Project Management and Administration</p>
+		
+						<p>Assist with PWA release</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Access feature</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Build User Access feature</p>
+		
+						<p>Publish PWA 1.0</p>
+					</td>
+					<td valign="top" width="20%">
+		
+						<p>Design and QA/Testing</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	
 		<h3>References:</h3>
 		<ol class="bibliography">
 			<li>
